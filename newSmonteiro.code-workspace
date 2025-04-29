@@ -1,6 +1,10 @@
+
+
+print("Welcome to the Intro to Data Science project!")
+
 # Create a basic structure for a Python project
 
-# main.py
+#main.py
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -37,6 +41,9 @@ plt.plot(X_test, y_pred, color='red')
 plt.xlabel('Year')
 plt.ylabel('Sales')
 plt.title('Sales Forecast')
-plt.show(block=True)
-   
+plt.legend(['Predicted', 'Test Data', 'Train Data'])
+plt.grid()
+plt.savefig('sales_forecast.png')  # Save the plot as a PNG file
+plt.show()  # Display the plot
+       
 
