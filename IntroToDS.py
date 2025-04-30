@@ -11,10 +11,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-# Sample data
-data = {'Year': [1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020], 
- 'Sales': [100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600]}
-df = pd.DataFrame(data)
+file_path = '1000SalesRecords.csv'  # Update this path if the file is located in a different directory
+df = pd.read_csv(file_path)
 
 # Preparing the data
 X = df[['Year']]
